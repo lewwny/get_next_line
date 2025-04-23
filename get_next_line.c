@@ -6,7 +6,7 @@
 /*   By: lenygarcia <marvin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 18:35:22 by lenygarcia        #+#    #+#             */
-/*   Updated: 2025/04/23 21:25:39 by lenygarcia       ###   ########.fr       */
+/*   Updated: 2025/04/23 21:46:39 by lenygarcia       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,6 +99,7 @@ char	*update_line(char *stash)
 	while (stash[i])
 		new_stash[j++] = stash[i++];
 	new_stash[j] = '\0';
+	free(stash);
 	return (new_stash);
 }
 
