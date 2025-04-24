@@ -6,7 +6,7 @@
 /*   By: lenygarcia <marvin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 18:13:04 by lenygarcia        #+#    #+#             */
-/*   Updated: 2025/04/23 21:25:10 by lenygarcia       ###   ########.fr       */
+/*   Updated: 2025/04/24 14:19:34 by lengarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,4 +69,24 @@ char	*ft_strchr(char *s, int c)
 		i++;
 	}
 	return (NULL);
+}
+
+char	*ft_strdup(char *src)
+{
+	int		size;
+	int		i;
+	char	*res;
+
+	i = 0;
+	size = ft_strlen(src);
+	res = (char *) malloc(sizeof(char) * (size + 1));
+	if (!res)
+		return (NULL);
+	while (src[i])
+	{
+		res[i] = src[i];
+		i++;
+	}
+	res[i] = '\0';
+	return (res);
 }

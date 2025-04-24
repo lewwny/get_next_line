@@ -6,7 +6,7 @@
 /*   By: lenygarcia <marvin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 18:09:53 by lenygarcia        #+#    #+#             */
-/*   Updated: 2025/04/23 18:18:56 by lenygarcia       ###   ########.fr       */
+/*   Updated: 2025/04/24 14:21:15 by lengarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 char	*get_next_line(int fd);
 char	*ft_strchr(char *s, int c);
 char	*ft_strjoin(char *s1, char *s2);
+char	*ft_strdup(char *src);
 
 int		ft_strlen(char *s);
 #endif

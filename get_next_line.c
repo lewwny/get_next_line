@@ -6,7 +6,7 @@
 /*   By: lenygarcia <marvin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 18:35:22 by lenygarcia        #+#    #+#             */
-/*   Updated: 2025/04/23 21:46:39 by lenygarcia       ###   ########.fr       */
+/*   Updated: 2025/04/24 14:30:02 by lengarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,7 +115,11 @@ char	*get_next_line(int fd)
 		return (NULL);
 	line = get_line(stash);
 	if (!line)
+	{
+		free(stash);
+		stash = NULL;
 		return (NULL);
+	}
 	stash = update_line(stash);
 	return (line);
 }
