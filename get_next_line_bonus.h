@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.h                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lenygarcia <marvin@42.fr>                  +#+  +:+       +#+        */
+/*   By: lengarci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/23 18:09:53 by lenygarcia        #+#    #+#             */
-/*   Updated: 2025/05/03 08:17:18 by lengarci         ###   ########.fr       */
+/*   Created: 2025/04/28 14:37:40 by lengarci          #+#    #+#             */
+/*   Updated: 2025/05/03 08:16:20 by lengarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef GET_NEXT_LINE_BONUS_H
+# define GET_NEXT_LINE_BONUS_H
 
 # include <stdlib.h>
 # include <unistd.h>
@@ -26,4 +26,5 @@ char	*ft_strjoin(char *s1, char *s2);
 char	*ft_strdup(char *src);
 
 int		ft_strlen(char *s);
+
 #endif
